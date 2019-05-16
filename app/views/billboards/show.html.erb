@@ -1,0 +1,4 @@
+<h1><%= @bd.name %></h1>
+<%= link_to 'see all billboards', billboards_path %>
+<%= link_to 'Edit billboard', edit_billboard_path(@bd) %>
+<%= link_to 'remove a genre', billboard_path(@bd), method: :delete %>
