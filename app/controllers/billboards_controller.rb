@@ -5,7 +5,6 @@ before_action :set_bd, only: [:show, :edit, :update, :destroy]
   end
 
   def show
-
   end
 
   def new

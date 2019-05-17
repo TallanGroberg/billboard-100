@@ -1,0 +1,14 @@
+<h1><%= @art.id ? 'edit artist' : 'create artists' %></h1>
+
+<%= form_for @art do |f| %>
+
+<%= f.label :name %>
+
+<%= f.text_field :name, required: true, autofocus: true %>
+
+<%= f.submit %>
+
+<% end %>
+<br>
+
+<%= link_to 'discover artist', arts_path %>
