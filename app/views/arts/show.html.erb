@@ -1,3 +1,4 @@
 <h1><%= @art.name %></h1>
 
 <%= link_to 'Edit Artists', edit_art_path(@art)  %>
+<%= link_to 'Delete artist', art_path(@art), method: :delete %>
