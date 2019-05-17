@@ -6,8 +6,6 @@ class SongsController < ApplicationController
 
   def index
     @songs = @art.songs
-    
-
   end
 
   def show
@@ -17,6 +15,7 @@ class SongsController < ApplicationController
     @song = @art.songs.new
     render partial: 'form'
   end
+
   def create
     @song = @art.songs.new(song_params)
     if @song.save
@@ -25,15 +24,20 @@ class SongsController < ApplicationController
       render partial: 'form'
     end
   end
+
     def edit
-      render partial: 'form'
     end
+
     def update
       if @song.update(song_params)
         redirect_to art_song_path(@art, @song)
       else
-        render partial: 'form'
+        render :edit
     end
+  end
+  def destroy
+    @song.destroy
+
   end
 
 
@@ -43,8 +47,9 @@ class SongsController < ApplicationController
   end
 
   def set_song
-    @song = @art.songs.find(params[:id])
-     # @song = @bd.@song.find(params[:id])
+    @song = Song.find(params[:id])
+
+
   end
   def song_params
     params.require(:song).permit(:name)

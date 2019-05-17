@@ -1,9 +1,9 @@
 <h1>songs</h1>
 <%= link_to 'new song', new_art_song_path(@art) %>
-<%= link_to 'edit song', edit_art_song_path(:art, :song) %>
+
 <ul>
   <% @songs.each do |songs| %>
-<li><%= link_to songs.name, [@art, @song] %></li>
+<li><%= link_to songs.name, [@art, songs] %></li>
 <% end %>
 </ul>
 <%= link_to 'show', art_songs_path(@art) %>
