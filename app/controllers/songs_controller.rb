@@ -37,7 +37,7 @@ class SongsController < ApplicationController
   end
   def destroy
     @song.destroy
-
+    redirect_to art_songs_path(@art)
   end
 
 
