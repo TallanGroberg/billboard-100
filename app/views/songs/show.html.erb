@@ -1,5 +1,10 @@
 <h1><%= @art.name %> - <%= @song.name %></h1>
 
 
+<% @bd.songs.each do |songs| %>
+
+<p>song: <%= song.name %></p>
+
+<% end %>
 <%= link_to 'edit song', edit_art_song_path(@art, @song) %>
 <%= link_to 'delete song', [@art, @song], method: :delete %>
