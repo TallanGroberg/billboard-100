@@ -1,6 +1,6 @@
 <h1><%= @art.id ? 'edit artist' : 'create artists' %></h1>
 
-<%= form_for @art do |f| %>
+<%= form_with(model: @art, local: true, class: "ui form") do |f| %>
 
 <%= f.label :name %>
 
