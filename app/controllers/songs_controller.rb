@@ -1,11 +1,11 @@
 class SongsController < ApplicationController
     before_action :set_art
-    before_action :set_song, only: [:show, :edit, :update, :destroy]
-    # before_action set_bd:
+     before_action :set_song, only: [:show, :edit, :update, :destroy]
 
 
   def index
     @songs = @art.songs
+
   end
 
   def show
@@ -44,6 +44,7 @@ class SongsController < ApplicationController
   private
   def set_art
     @art = Art.find(params[:art_id])
+
   end
 
   def set_song
@@ -52,8 +53,7 @@ class SongsController < ApplicationController
 
   end
   def song_params
-    params.require(:song).permit(:name)
+    params.require(:song).permit(:name, :billboard_id)
   end
-  # def set_bd
-  #   @bd = Billboard.find(params[:id])
+
 end
