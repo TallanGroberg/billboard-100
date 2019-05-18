@@ -1,5 +1,7 @@
 # README
 
+Its best to add an artist to the top billboard manually
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
