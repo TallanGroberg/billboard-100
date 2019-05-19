@@ -1,8 +1,9 @@
 <h1>Click a billboard to see the songs</h1>
 
-
+<div class="all-bill-links">
 <ul>
   <% @bd.each do |bd| %>
   <li> <%= link_to bd.name, billboard_path(bd.id) %></li>
-</ul>
 <% end %>
+</ul>
+</div>

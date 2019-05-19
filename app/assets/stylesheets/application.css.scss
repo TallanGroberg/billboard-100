@@ -3,9 +3,39 @@ body {
 background-image: url(https://cdn1.vectorstock.com/i/1000x1000/11/35/abstract-background-with-colorful-music-notes-vector-1971135.jpg);
 
 }
+h1 {
+  border: 10px solid;
+  border-image-source: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));
+  border-image-slice: 1;
+  padding-left: 5px;
+  text-align: center;
+}
 .navbar {
   border: 10px solid;
   border-image-source: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));
   border-image-slice: 1;
   padding-left: 5px;
+  text-align: center;
+}
+ul > li {
+
+  border: 10px solid;
+  border-image-source: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));
+  border-image-slice: 1;
+  padding-left: 5px;
+  text-align: center;
+}
+.all-art-link {
+  border: 10px solid;
+  border-image-source: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));
+  border-image-slice: 1;
+  padding-left: 5px;
+  text-align: center;
+}
+.art-names {
+  border: 10px solid;
+  border-image-source: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));
+  border-image-slice: 1;
+  padding-left: 5px;
+  text-align: center;
 }

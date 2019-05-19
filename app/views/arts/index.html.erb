@@ -1,11 +1,11 @@
 <h1>Arts click an artist to see all the songs</h1>
+<div class="all-art-link">
 <%= link_to 'all songs from artist', art_songs_path(@art)  %>
-
-<ul>
+  </div>
+<ul class="art-names">
     <% @art.each do |art| %>
     <br>
     <li><%= link_to art.name, art_path(art.id) %></li>
     <br>
+    <% end  %>
 </ul>
-
-<% end  %>

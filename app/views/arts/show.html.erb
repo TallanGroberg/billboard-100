@@ -1,6 +1,10 @@
-<h1><%= @art.name %></h1>
+<div class="art-links">
+  <h1><%= @art.name %></h1>
 
 <%= link_to 'Edit Artists', edit_art_path(@art)  %>
 <%= link_to 'Delete artist', art_path(@art), method: :delete %>
 <%= link_to 'all songs from artist', art_songs_path(@art)  %>
 <%= link_to 'add a song', new_art_song_path(@art) %>
+
+
+</div>
